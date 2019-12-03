@@ -1,0 +1,14 @@
+<div class="row">
+{% for book in data.members %}
+
+
+        <div class="col-6">
+        <img class="img-fluid" src="img/{{book.image}}">
+          <h3>{{ book.tenure }}, {{ book.instruments }}</h3>
+</div>
+        
+          
+        {% endfor %}
+<div class="col">
+</div>
+</div>

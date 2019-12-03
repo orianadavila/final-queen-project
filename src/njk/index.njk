@@ -4,26 +4,34 @@
 
 {% block content %}
 
+<div class="jumbotron">
+  <h1 class="display-4">Hello, world!</h1>
+</div>
+{% include "_partials/jumbotron.njk" %}
+
+{% block story %}
+  <img src="img/queen-band-early.jpg" class="img-fluid">
+{% endblock %}
+
+
+
 <div class="container">
   <div class="row">
     <div class="col">
-    <h1>Main headline</h1>
-    <p class="author">By Obi-Wan Kenobi</p>
+    <img src="img/queen-band-early.jpg" class="img-fluid">
+    <h1>Queen</h1>
+    {% include "_partials/discography.njk" %}
+  
+    <p class="author">By ori</p>
     <p class="date"> Published May 25, 1977</p>
     </div>
   </div>
   <div class="row">
     <div class="col">
       <p>
-        Lucas ipsum dolor <a href="detail-book-example.html">link to book page example</a> amidala sith dooku solo moff organa obi-wan windu. Gamorrean binks wedge darth. Mon darth mon kit ponda solo. Moff watto ackbar mothma moff anakin. Lando skywalker lars fett calrissian lars organa. Organa kenobi wedge darth jawa skywalker anakin. Twi'lek kit darth calamari lando kamino droid. Darth jawa fett grievous maul. Palpatine obi-wan leia tusken raider dagobah. Twi'lek qui-gon boba antilles yoda thrawn. Wampa luuke wampa skywalker. Moff ponda ackbar dagobah kit lobot jinn solo.
+        Few bands embodied the pure excess of the '70s like Queen. Embracing the exaggerated pomp of prog rock and heavy metal, as well as vaudevillian music hall, the British quartet delved deeply into camp and bombast, creating a huge, mock-operatic sound with layered guitars and overdubbed vocals. Queen's music was a bizarre yet highly accessible fusion of the macho and the fey.
       </p>
-      <ul> 
-        {% for book in data.books %}
-          <li>{{ book.title }}, {{ book.author }}</li>
-        {% else %}
-          <li>This would display if the 'books' collection were empty</li>
-        {% endfor %}
-     </ul>
+       {% include "_partials/bandmembers.njk" %}
     </div>
   </div>
 </div>

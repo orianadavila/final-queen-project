@@ -1,0 +1,14 @@
+<div class="row">
+{% for book in data.discography %}
+
+
+        <div class="col-6">
+        <img class="img-fluid" src="img/{{book.image}}">
+          <h3>{{ book.year }}, {{ book.album }}</h3>
+</div>
+        
+          
+        {% endfor %}
+<div class="col">
+</div>
+</div>
