@@ -1,14 +1,24 @@
 {% extends '_layouts/base.njk' %}
 
 {% block content %}
-<article class="container">
+<article class="container detail-block">
   <div class="row">
     <div class="col-sm-4 left-rail">
+    <img class="img-fluid" src="img/members/{{member.imagebw}}">
  <h2>{{member.name}}</h2>
     </div>
     <div class="col-sm-8">
-    <h2>{{member.intrument}}</h2>
-  
+    <h2>{{member.instruments}}</h2>
+    <h5> Tenure: <span> {{member.tenure}} </span> </h5>
+    
+    <h5> Birthplace: <span> {{member.birthplace}} </span> </h5>
+    
+    <h5> Birthdate: <span> {{member.birthdate}} </span> </h5>
+   
+    {{member.text | safe}}
+   
+    
+
 
     </div>
   </div>

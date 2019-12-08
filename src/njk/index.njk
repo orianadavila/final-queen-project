@@ -4,34 +4,45 @@
 
 {% block content %}
 
-<div class="jumbotron">
-  <h1 class="display-4">Hello, world!</h1>
-</div>
+
 {% include "_partials/jumbotron.njk" %}
 
-{% block story %}
-  <img src="img/queen-band-early.jpg" class="img-fluid">
-{% endblock %}
+
+
+
 
 
 
 <div class="container">
   <div class="row">
-    <div class="col">
+    <div class="col-sm-8 offset-sm-2">
+     <h1 class="main-title">Queen</h1>
     <img src="img/queen-band-early.jpg" class="img-fluid">
-    <h1>Queen</h1>
-    {% include "_partials/discography.njk" %}
   
-    <p class="author">By ori</p>
-    <p class="date"> Published May 25, 1977</p>
+  
+  
+ 
     </div>
   </div>
   <div class="row">
     <div class="col">
-      <p>
-        Few bands embodied the pure excess of the '70s like Queen. Embracing the exaggerated pomp of prog rock and heavy metal, as well as vaudevillian music hall, the British quartet delved deeply into camp and bombast, creating a huge, mock-operatic sound with layered guitars and overdubbed vocals. Queen's music was a bizarre yet highly accessible fusion of the macho and the fey.
+      <h1 class="bio"> B I O G R A P H Y </h1>
+
+      <p class="queen-bio">
+        Queen was one of the longest-lasting and most commercially successful bands to emerge from the British heavy rock scene of the early 1970s, but unlike their contemporaries such as Led Zeppelin, Deep Purple and Black Sabbath, they soon became just as popular with pop fans as fans of hard rock and heavy metal, beginning with "Killer Queen" from their third album "Sheer Heart Attack" in 1974.
       </p>
-       {% include "_partials/bandmembers.njk" %}
+      <p>
+        Formed in London in 1970 following the demise of the band Smile, Queen originally consisted of vocalist Freddie Mercury, guitarist Brian May and drummer Roger Taylor before being joined by bassist John Deacon. The band became popular with audiences via their hit singles, live performances, originality and showmanship, being voted the greatest British band of all time in a national BBC poll. Their Live Aid (1985) performance was voted the best live rock performance of all time in an industry poll. According to the BBC, Queen have sold more than 300 million albums as of 2009.
+        </p>
+        <p>
+        Queen's first album "Queen" was a commercial flop in 1973, failing to chart and producing no hit single, but their second album "Queen II" produced a top ten hit, "Seven Seas of Rhye". It was with the release of "Sheer Heart Attack" in 1974 and "A Night at the Opera" the following year that the band gained international success. They have released fifteen studio albums, five live albums and numerous compilation albums. Since Mercury's death and Deacon's retirement, May and Taylor have performed infrequently together at special events and programs as members of other ensembles. Between 2004 to 2009 the duo collaborated with Paul Rodgers under the moniker Queen + Paul Rodgers, and between 2011 to 2015 with Adam Lambert under the moniker Queen + Adam Lambert.
+      </p>
+
+      <h1 class= "discos"> A L B U M S </h1>
+          {% include "_partials/discography.njk" %}
+       
+       <h1 class="member-cards">Meet the Band!</h1>
+          {% include "_partials/bandmembers.njk" %}
     </div>
   </div>
 </div>

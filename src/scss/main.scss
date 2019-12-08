@@ -21,3 +21,46 @@
 // Import partials
 @import "nav";
 
+@import "jumbotron";
+
+
+.main-title {
+    font-size: 500%;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    margin-top: 1%;
+    margin-bottom: 10px;
+
+}
+
+.detail-block {
+    margin-top: 20px;
+}
+
+.main-image {
+    margin-left: auto;
+    margin-right: auto; 
+    margin-top: 100px;
+}
+
+h5 span {
+    font-weight: normal
+}
+
+.queen-bio {
+    vertical-align: baseline;
+}
+
+.bio {
+   margin-top: 50px;
+}
+
+.member-cards {
+    margin-top: 100px;
+}
+
+.discos {
+    margin-top: 100px;
+}
+
+

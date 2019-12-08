@@ -1,14 +1,24 @@
 <div class="row">
-{% for book in data.members %}
+{% for member in data.members %}
 
 
-        <div class="col-6">
-        <img class="img-fluid" src="img/{{book.image}}">
-          <h3>{{ book.tenure }}, {{ book.instruments }}</h3>
+        <div class="col-sm-6 mb-4 col-lg-3">
+
+<div class="card" >
+  <img class="card-img-top" src="img/members/{{member.imagebw}}" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">{{member.name}}</h5>
+    <a href="{{member.slug}}.html" class="btn btn-primary">Biography</a>
+  </div>
 </div>
+
+
+
+        </div>
         
           
         {% endfor %}
-<div class="col">
 </div>
-</div>
+
+
+
